@@ -7,20 +7,6 @@ namespace Lab8.Purple
     public class Task3
 
     {
-        public static void Main() 
-        {
-            var p = new Participant("АРТУРИК", "Пепсиколухочу");
-            var fig = new FigureSkating(new double[] { 1, 1, 1, 1, 1, 1, 1 });
-            fig.Add(p);
-            p.Print();
-            fig.Evaluate(new double[] { 5.5, 5.8, 5.6, 5.7, 5.9, 5.8, 5.7 });
-            Participant.SetPlaces(fig.Participants);
-            Console.WriteLine(p.Name);
-            Console.WriteLine(string.Join(", ", p.Marks));
-            Console.WriteLine(p.Score);
-            Console.WriteLine(p.TopPlace);
-            Console.WriteLine(p.TotalMark);
-        }
 
         public struct Participant
         {
